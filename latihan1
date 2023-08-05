@@ -1,0 +1,10 @@
+<html>
+   <body>
+      <div>
+         <strong>tugas latihan1</strong>
+        <a href="latihan1.html">klik</a>
+      </div>
+      <strong>tugas latihan2</strong>
+     <a href="latihan2.html">klik</a>
+   </body>  
+</html>
