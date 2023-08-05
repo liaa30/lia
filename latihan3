@@ -1,0 +1,16 @@
+<html>
+     <body>
+       <div>
+         <h1>stiker1 </h1>
+         
+          <strong>Love</strong>
+         <a href="klik"></a>
+         <img src="gambar2.gif" alt="">
+       </div>
+       <h1>stiker2  </h1>
+       
+       <strong>Meow!</strong>
+       <a href="klik"></a>
+       <img src="gambar1.jpeg" alt="">
+     </body>
+</html>
