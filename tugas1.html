@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas form</title>
+    <style>
+        #submit {
+            margin-top: 15px;
+        }
+
+        .hasil {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table border="0" class="tableform">
+            <form action="">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" id="Nama" placeholder="Masukan Nama"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>:</td>
+                    <td><input type="text" id="Kelas" placeholder="Masukan Kelas"></td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td>:</td>
+                    <td><input type="text" id="Umur" placeholder="Masukan Umur"></td>
+                </tr>
+                <tr>
+                    <td>Hobby </td>
+                    <td>:</td>
+                    <td><input type="text" id="Hobby" placeholder="Masukkan Hobby" name="Hobby"></td>
+                </tr>
+            </form>
+        </table>
+        <button id="submit" onclick="tes()"> Submit </button>
+    </div>
+
+    <div class="Hasil">
+        <div class="result_Nama"></div>
+        <div class="result_Kelas"></div>
+        <div class="result_Umur"></div>
+        <div class="result_Hobby"></div>
+    </div>
+    
+    <script>
+        const Submit = document.querySelector('#Submit');
+
+        function tes() {
+
+        let Nama = document.querySelector("#Nama").value
+        let Kelas = document.querySelector("#Kelas").value
+        let Umur = document.querySelector("#Umur").value
+        let Hobby = document.querySelector("#Hobby").value
+        
+        console.log(Nama);
+        console.log(Kelas);
+        console.log(Umur);
+        console.log(Hobby);
+
+        alert("Nama : " + Nama + "\n Kelas : " + Kelas + "\n Umur : " + Umur + "\n Hobby : " + Hobby);
+
+        let divNama = document.querySelector(".result_Nama").innerHTML = 'Nama :' + Nama
+        let divKelas = document.querySelector(".result_Kelas").innerHTML = 'Kelas :' + Kelas
+        let divUmur = document.querySelector(".result_Umur").innerHTML = 'Umur :' + Umur
+        let divHobby = document.querySelector(".result_Hobby").innerHTML = 'Hobby :' + Hobby 
+
+
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>

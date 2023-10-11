@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+        <input typo="number" id="kotak_pertama" name="satu" placeholder="Masukan Angka">
+        <br>
+        <input typo="number" id="kotak_kedua" name="dua" placeholder="Masukan Angka">
+        <br>
+        <button onclick="tambah()">+</button> <button onclick="kurang()">-</button> <button onclick="kali()">x</button> <button onclick="bagi()">/</button>
+    </div>
+       
+    <script>
+        function tambah(){
+            let input1 = parseInt(document.querySelector('#kotak_pertama').value)
+            let input2 = parseInt(document.querySelector("#kotak_kedua").value) 
+            // let input2 = parsetInt(document.querySelector('#kotak_kKkKedua').value);
+            console.log(input1)
+            alert(input1 + input2);        
+        }
+
+        function kurang(){
+            let input1 = parseInt(document.querySelector('#kotak_pertama').value)
+            let input2 = parseInt(document.querySelector("#kotak_kedua").value) 
+
+            alert(input1 - input2);    
+
+        }
+
+        function kali(){
+            let input1 = parseInt(document.querySelector('#kotak_pertama').value)
+            let input2 = parseInt(document.querySelector("#kotak_kedua").value) 
+
+            alert(input1 * input2);  
+
+
+        }
+
+       
+         function bagi(){
+
+            let input1 = parseInt(document.querySelector('#kotak_pertama').value)
+            let input2 = parseInt(document.querySelector("#kotak_kedua").value) 
+
+            alert(input1 / input2);  
+        }
+    </script>
+    
+</body>
+</html>
